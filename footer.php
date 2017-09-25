@@ -15,12 +15,35 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="wrapper">
-			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'acstarter' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'acstarter' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'acstarter' ), 'acstarter', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-			</div><!-- .site-info -->
-	</div><!-- wrapper -->
+			<div class="col-1">
+				<div class="site-name">
+					<?php bloginfo('name'); ?>
+				</div><!--.site-name-->
+				<?php if($address_line_1):?>
+					<div class="address-line-1">
+						<?php echo $address_line_1;?>
+					</div><!--.address-line-1-->
+				<?php endif;?>
+				<?php if($address_line_2):?>
+					<div class="address-line-2">
+						<?php echo $address_line_2;?>
+					</div><!--.address-line-2-->
+				<?php endif;?>
+				<?php if($phone && $phone_pre):?>
+					<div class="phone">
+						<?php echo $phone_pre.$phone;?>
+					</div><!--.phone-->
+				<?php endif;?>
+				<?php if($fax && $fax_pre):?>
+					<div class="fax">
+						<?php echo $fax_pre.$fax;?>
+					</div><!--.fax-->
+				<?php endif;?>
+
+			</div><!--.col-1-->
+			<div class="col-2">
+			</div><!--.col-2-->
+		</div><!-- wrapper -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
