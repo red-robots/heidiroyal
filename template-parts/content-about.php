@@ -31,6 +31,7 @@
             <?php endif;
             if($name):?>
                 <header><h2><?php echo $name;?></h2></header>
+                <div class="spacer"></div><!--.spacer-->
             <?php endif;
             if($linkedin ||$email):?>
                 <div class="social">
