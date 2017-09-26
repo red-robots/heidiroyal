@@ -16,6 +16,12 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="wrapper">
 			<div class="col-1">
+				<?php $address_line_1 = get_field("address_line_1","option");
+				$address_line_2 = get_field("address_line_2","option");
+				$phone_pre = get_field("phone_pre","option");
+				$phone = get_field("phone","option");
+				$fax_pre = get_field("fax_pre","option");
+				$fax = get_field("fax","option");?>
 				<div class="site-name">
 					<?php bloginfo('name'); ?>
 				</div><!--.site-name-->
@@ -39,9 +45,15 @@
 						<?php echo $fax_pre.$fax;?>
 					</div><!--.fax-->
 				<?php endif;?>
-
 			</div><!--.col-1-->
 			<div class="col-2">
+				<?php $copyright = get_field("copyright","option");?>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+				<?php if($copyright):?>
+					<div class="copyright">
+						<?php echo $copyright;?>
+					</div><!--.copyright-->
+				<?php endif;?>
 			</div><!--.col-2-->
 		</div><!-- wrapper -->
 	</footer><!-- #colophon -->

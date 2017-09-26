@@ -18,7 +18,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php /* Start the Loop */
-			if ( have_posts() ) : the_post();
+			$post = get_post(21);
+			if ( $post ) : 
+				setup_postdata($post);
 
 				/*
 				 * Include the Post-Format-specific template for the content.
