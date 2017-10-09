@@ -37,12 +37,12 @@
 				<?php endif;?>
 				<?php if($phone && $phone_pre):?>
 					<div class="phone">
-						<?php echo $phone_pre.$phone;?>
+						<?php echo $phone_pre.'&nbsp;'.$phone;?>
 					</div><!--.phone-->
 				<?php endif;?>
 				<?php if($fax && $fax_pre):?>
 					<div class="fax">
-						<?php echo $fax_pre.$fax;?>
+						<?php echo $fax_pre.'&nbsp;'.$fax;?>
 					</div><!--.fax-->
 				<?php endif;?>
 			</div><!--.col-1-->
@@ -51,7 +51,7 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
 				<?php if($copyright):?>
 					<div class="copyright">
-						<?php echo $copyright;?>
+						<?php echo $copyright.'&nbsp;'.date('Y');?>
 					</div><!--.copyright-->
 				<?php endif;?>
 			</div><!--.col-2-->
