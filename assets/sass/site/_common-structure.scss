@@ -1,67 +1,104 @@
 .clear-bottom {
-    &:after {
-      content: "";
-      clear:both;
-      display: block;
-    }
+  &:after {
+    content: "";
+    clear:both;
+    display: block;
   }
-  .copy {
-    font-size: 16px;
+}
+.cap {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.copy {
+  font-size: 16px;
+  color: $color__text-main;
+  font-weight: 300;
+  @media screen and (min-width: $tabwidth){
+    font-size: 22px;
+  }
+  > *:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  p {
+    margin: 20px 0;
+  }
+  strong, b, em {
+    font-weight: 800;
+  }
+  a {
+    text-decoration: none;
     color: $color__text-main;
-    font-weight: 300;
-    @media screen and (min-width: $tabwidth){
-      font-size: 22px;
-    }
-    > *:first-child {
-      margin-top: 0;
-      padding-top: 0;
-    }
-    > *:last-child {
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    p {
-      margin: 20px 0;
-    }
-    strong, b, em {
-      font-weight: 800;
-    }
-    a {
-      text-decoration: none;
+    position: relative;
+    &:hover {
       color: $color__text-main;
-      position: relative;
-      &:hover {
-        color: $color__text-main;
+    }
+  }
+  h1, h2, h3 {
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    color: $color__text-main;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  ul, ol {
+    padding: 0;
+    margin: 0 0 20px 20px;
+    font-size: inherit;
+    li {
+      margin: 0 0 0 20px;
+      font-size: inherit;
+      padding: 0;
+      list-style-type: square;
+      a {
+      }
+      ul.sub-menu {
+        margin: 0;
       }
     }
-    h1, h2, h3 {
-      margin: 0 0 20px 0;
-      text-transform: uppercase;
-      color: $color__text-main;
-    }
-    h1 {
-      font-size: 30px;
-    }
-    h2 {
-      font-size: 25px;
-    }
-    h3 {
-      font-size: 20px;
-    }
-    ul, ol {
-      padding: 0;
-      margin: 0 0 20px 20px;
-      font-size: inherit;
-      li {
-        margin: 0 0 0 20px;
-        font-size: inherit;
-        padding: 0;
-        list-style-type: square;
-        a {
+  }
+}
+#masthead {
+  >.wrapper {
+    .logo {
+      a {
+        img {
+          display: block;
+          width: 100%;
         }
-        ul.sub-menu {
-          margin: 0;
+      }
+    }
+    #site-navigation {
+      button {
+        display: inline-block;
+        border: 1px solid black;
+        box-shadow: none;
+        text-shadow: none;
+        @media screen and (min-width: $tabwidth){
+          display: none;
+        }
+      }
+      ul {
+        li {
+          a {
+
+          }
+          .sub-menu {
+            display: none;
+          }
         }
       }
     }
   }
+}

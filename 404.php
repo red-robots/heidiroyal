@@ -13,50 +13,52 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'acstarter' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'acstarter' ); ?></p>
-
-					<?php
-						get_search_form();
-
-						the_widget( 'WP_Widget_Recent_Posts' );
-
-						// Only show the widget if site has multiple categories.
-						if ( acstarter_categorized_blog() ) :
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'acstarter' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-						endif;
-
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'acstarter' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
-						the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-				</div><!-- .page-content -->
+				<?php $post = get_post(1);
+				setup_postdata();?>
+				<?php $row_1_image = get_field("row_1_image");?>
+				<div class="row-1" <?php if($row_1_image):
+					echo 'style="background-image: url('.$row_1_image['url'].');"';
+				endif;?>>
+				</div><!--.row-1-->
+				<div class="row-2">
+					<div class="wrapper cap">
+						<section class="col-1">
+							<header><h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'acstarter' ); ?></h1></header>
+							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'acstarter' ); ?></p>
+						</section><!--.col-1-->
+						<aside class="col-2">
+							<?php $practice_areas_title = get_field("practice_areas_title","option");
+							if($practice_areas_title):?>
+								<header><h2><?php echo $practice_areas_title;?></h2></header>
+							<?php endif;?>
+							<div class="wrapper">
+								<?php for($i=1;$i<4;$i++):
+									$image = get_field("circle_{$i}_image","option");
+									$title = get_field("circle_{$i}_title","option");
+									$link = get_field("circle_{$i}_link","option");?>
+									<div class="circle">
+										<?php if($link):?>
+											<a href="<?php echo $link;?>">
+										<?php endif;?>
+											<div class="wrapper" <?php if($image):
+												echo 'style="background-image: url('.$image['sizes']['medium'].');"';
+											endif;?>>
+												<?php if($title):?>
+													<div class="title">
+														<?php echo $title;?>
+													</div><!--.title-->
+												<?php endif;?>
+											</div><!--.wrapper-->
+										<?php if($link):?>
+											</a>
+										<?php endif;?>
+									</div><!--.circle-->
+								<?php endfor;?>
+							</div><!--.wrapper-->
+						</aside><!--.col-2-->
+					</div><!--.wrapper-->
+				</div><!--.row-2-->
 			</section><!-- .error-404 -->
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

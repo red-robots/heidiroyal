@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class("template-page"); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class("template-sitemap"); ?>>
     <?php $row_1_image = get_field("row_1_image");?>
     <div class="row-1" <?php if($row_1_image):
         echo 'style="background-image: url('.$row_1_image['url'].');"';
@@ -51,6 +51,6 @@
                     <?php endfor;?>
                 </div><!--.wrapper-->
             </aside><!--.col-2-->
-        </div><!--.wrapper-->
+		</div><!--.wrapper-->
     </div><!--.row-2-->
 </article><!-- #post-## -->
