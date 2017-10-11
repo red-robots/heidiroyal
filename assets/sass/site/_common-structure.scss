@@ -130,7 +130,15 @@
               display: inline-block;
             }
             a {
-
+              text-decoration: none;
+              font-size: 16px;
+              color: $color__text-main;
+              @media screen and (min-width: $tabwidth){
+                font-size: 25px;
+              }
+              &:hover {
+                color: $color__text-main;
+              }
             }
             .sub-menu {
               display: none;

@@ -1397,7 +1397,10 @@ html[xmlns] .flexslider .slides{display:block}
 }#masthead>.wrapper #site-navigation .menu-primary-container ul{margin:0;padding:0}
 #masthead>.wrapper #site-navigation .menu-primary-container ul li{margin:10px 0;list-style-type:none}
 @media screen and (min-width:600px){#masthead>.wrapper #site-navigation .menu-primary-container ul li{margin:0 30px;display:inline-block}
-}#masthead>.wrapper #site-navigation .menu-primary-container ul li .sub-menu{display:none}
+}#masthead>.wrapper #site-navigation .menu-primary-container ul li a{text-decoration:none;font-size:16px;color:#404040}
+@media screen and (min-width:600px){#masthead>.wrapper #site-navigation .menu-primary-container ul li a{font-size:25px}
+}#masthead>.wrapper #site-navigation .menu-primary-container ul li a:hover{color:#404040}
+#masthead>.wrapper #site-navigation .menu-primary-container ul li .sub-menu{display:none}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
