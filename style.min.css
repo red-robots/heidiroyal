@@ -1389,8 +1389,9 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){#masthead>.wrapper .logo{width:30%;margin:0}
 }#masthead>.wrapper .logo a img{display:block;width:100%}
 #masthead>.wrapper #site-navigation{text-align:center;margin:10px 0 0 0}
+#masthead>.wrapper #site-navigation.toggled button{background-color:#6285a5;color:white;border:1px solid #6285a5}
 #masthead>.wrapper #site-navigation.toggled #primary-menu{display:block}
-#masthead>.wrapper #site-navigation button{display:inline-block;border:1px solid #a0a0a0;box-shadow:none;background-color:white;color:#404040;font-size:16px;padding:10px;text-shadow:none}
+#masthead>.wrapper #site-navigation button{display:inline-block;border:1px solid #a0a0a0;box-shadow:none;background-color:white;color:#6285a5;text-transform:uppercase;font-family:"Oxygen",sans-serif;font-size:16px;padding:10px;text-shadow:none}
 @media screen and (min-width:600px){#masthead>.wrapper #site-navigation button{display:none}
 }#masthead>.wrapper #site-navigation #primary-menu{display:none}
 @media screen and (min-width:600px){#masthead>.wrapper #site-navigation #primary-menu{display:block}
@@ -1414,10 +1415,13 @@ html[xmlns] .flexslider .slides{display:block}
 #colophon>.wrapper{background-color:#6285a5}
 #colophon>.wrapper>.wrapper{padding:20px;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-justify-content:stretch;-webkit-box-pack:stretch;-ms-flex-pack:stretch;justify-content:stretch}
 @media screen and (min-width:600px){#colophon>.wrapper>.wrapper{padding:4% 5%;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start;-webkit-align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+}#colophon>.wrapper>.wrapper>.col-1{text-align:center}
+@media screen and (min-width:600px){#colophon>.wrapper>.wrapper>.col-1{text-align:left}
 }#colophon>.wrapper>.wrapper>.col-1 .phone a,#colophon>.wrapper>.wrapper>.col-1 .fax a{color:white;text-decoration:none}
 #colophon>.wrapper>.wrapper>.col-1 .phone a:hover,#colophon>.wrapper>.wrapper>.col-1 .fax a:hover{color:#a0a0a0}
-#colophon>.wrapper>.wrapper>.col-2{text-align:right}
-#colophon>.wrapper>.wrapper>.col-2 ul{margin:0;padding:0}
+#colophon>.wrapper>.wrapper>.col-2{text-align:center;margin:10px 0 0 0}
+@media screen and (min-width:600px){#colophon>.wrapper>.wrapper>.col-2{text-align:right;margin:0}
+}#colophon>.wrapper>.wrapper>.col-2 ul{margin:0;padding:0}
 #colophon>.wrapper>.wrapper>.col-2 ul li{margin:0;list-style-type:none}
 #colophon>.wrapper>.wrapper>.col-2 ul li a{color:white;text-decoration:none}
 #colophon>.wrapper>.wrapper>.col-2 ul li a:hover{color:#a0a0a0}

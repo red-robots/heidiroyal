@@ -102,6 +102,11 @@
       text-align: center;
       margin: 10px 0 0 0;
       &.toggled {
+        button {
+          background-color: $color__heidi-blue;
+          color: white;
+          border: 1px solid $color__heidi-blue;
+        }
         #primary-menu {
           display: block;
         }
@@ -111,7 +116,9 @@
         border: 1px solid $color__heidi-grey;
         box-shadow: none;
         background-color: white;
-        color: $color__text-main;
+        color: $color__heidi-blue;
+        text-transform: uppercase;
+        font-family: $font__rubik;
         font-size: 16px;
         padding: 10px;
         text-shadow: none;
@@ -226,6 +233,10 @@
         @include flexbox-justify(space-between);
       }
       >.col-1 {
+        text-align: center;
+        @media screen and (min-width: $tabwidth){
+          text-align: left;
+        }
         .site-name {
 
         }
@@ -246,7 +257,12 @@
         }
       }
       >.col-2 {
-        text-align: right;
+        text-align: center;
+        margin: 10px 0 0 0;
+        @media screen and (min-width: $tabwidth){
+          text-align: right;
+          margin: 0;
+        }
         ul {
           margin: 0;
           padding: 0;
