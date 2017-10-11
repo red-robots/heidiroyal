@@ -61,8 +61,8 @@
 	-webkit-flex-direction: $value;
 	flex-direction: $value;
   }
-  @mixin translateX($value){
-	-webkit-transform: translateX($value);
-	-ms-transform: translateX($value);
-	transform: translateX($value);
+  @mixin translateY($value){
+	-webkit-transform: translateY($value);
+	-ms-transform: translateY($value);
+	transform: translateY($value);
   }

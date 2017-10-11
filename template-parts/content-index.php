@@ -16,34 +16,13 @@
     endif;?>>
     </div><!--.row-1-->
     <section class="row-2">
-		<div class="wrapper cap">
+		<div class="wrapper cap copy">
             <?php the_content();?>
         </div><!--.wrapper-->
     </section><!--.row-2-->
     <section class="row-3">
-		<div class="wrapper cap">
-            <?php for($i=1;$i<4;$i++):
-                $image = get_field("circle_{$i}_image","option");
-                $title = get_field("circle_{$i}_title","option");
-                $link = get_field("circle_{$i}_link","option");?>
-                <div class="circle">
-                    <?php if($link):?>
-                        <a href="<?php echo $link;?>">
-                    <?php endif;?>
-                        <div class="wrapper" <?php if($image):
-                            echo 'style="background-image: url('.$image['sizes']['medium'].');"';
-                        endif;?>>
-                            <?php if($title):?>
-                                <div class="title">
-                                    <?php echo $title;?>
-                                </div><!--.title-->
-                            <?php endif;?>
-                        </div><!--.wrapper-->
-                    <?php if($link):?>
-                        </a>
-                    <?php endif;?>
-                </div><!--.circle-->
-            <?php endfor;?>
-        </div><!--.wrapper-->
+        <div class="wrapper cap">
+            <?php get_template_part("template-parts/content","circles");?>
+        </div><!--.cap-->
     </section><!--.row-3-->
 </article><!-- #post-## -->

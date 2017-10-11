@@ -38,12 +38,12 @@
 					<?php endif;?>
 					<?php if($phone && $phone_pre):?>
 						<div class="phone">
-							<?php echo $phone_pre.'&nbsp;'.$phone;?>
+							<?php echo $phone_pre.'&nbsp;'?><a href="tel:<?php echo preg_replace("/[^0-9]/","",$phone);?>"><?php echo $phone;?></a>
 						</div><!--.phone-->
 					<?php endif;?>
 					<?php if($fax && $fax_pre):?>
 						<div class="fax">
-							<?php echo $fax_pre.'&nbsp;'.$fax;?>
+							<?php echo $fax_pre.'&nbsp;';?><a href="tel:<?php echo preg_replace("/[^0-9]/","",$fax);?>"><?php echo $fax;?></a>
 						</div><!--.fax-->
 					<?php endif;?>
 				</div><!--.col-1-->
