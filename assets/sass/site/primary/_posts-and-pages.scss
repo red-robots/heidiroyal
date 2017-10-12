@@ -5,6 +5,9 @@
         width: 100%;
         background-position: center;
         background-size: cover;
+        @media screen and (min-width: 1500px){
+            padding: 225px 0;
+        }
     }
     >.row-2 {
         background-color: $color__heidi-light-grey;
@@ -39,13 +42,16 @@
         }
     }
 }
-.template-page, .error-404, .template-sitemap {
+.template-page, .error-404, .template-sitemap, .template-about {
     >.row-1 {
         padding: 14% 0;
         min-height: 200px;
         width: 100%;
         background-position: center;
         background-size: cover;
+        @media screen and (min-width: 1500px){
+            padding: 225px 0;
+        }
     }
     >.row-2 {
         >.wrapper {
@@ -56,12 +62,9 @@
             >header.row-1 {
                 text-align: center;
                 margin: 0 0 20px 0;
-                @media screen and (min-width: $tabwidth){
-                    margin: 0 0 40px 0;
-                }
                 h1 {
                     font-size: 30px;
-                    font-weight: 300;
+                    font-weight: 500;
                     font-family: $font__rubik;
                     margin: 0;
                     @media screen and (min-width: $tabwidth){
@@ -71,6 +74,7 @@
             }
             >.row-2 {
                 >.col-1 {
+                    min-height: 1px;
                     @media screen and (min-width: $tabwidth){
                         float: left;
                         width: 75%;
@@ -80,6 +84,7 @@
                 }
                 >.col-2 {
                     margin: 20px 0 0 0;
+                    min-height: 1px;
                     @media screen and (min-width: $tabwidth){
                         float: left;
                         width: 25%;
@@ -88,10 +93,129 @@
                     @media screen and (min-width: $midwidth){
                         padding: 0 4.5%;
                     }
-                    header {
-                        h2 {
-
+                }
+            }
+        }
+    }
+}
+.template-about {
+    >.row-1 {
+    }
+    >.row-2 {
+        >.wrapper {
+            >header.row-1 {
+                h1 {
+                }
+            }
+            >.row-2 {
+                >.col-1 {
+                    min-height: 1px;
+                    font-size: 16px;
+                    font-family: $font__main;
+                    width: 100%;
+                    float: none;
+                    padding: 0;
+                    margin: 0;
+                    @media screen and (min-width: $midwidth){
+                        float: left;
+                        width: 40%;
+                        font-size: 18px;
+                        padding: 0 6% 0 0;
+                    }
+                    h2 {
+                        background-color: $color__heidi-blue;
+                        color: white;
+                        font-size: 20px;
+                        padding: 0 5px;
+                    }
+                    ul {
+                        line-height: 1.2;
+                        padding: 0;
+                        margin: 0 0 20px 10px;
+                        font-size: inherit;
+                        @media screen and (min-width: $tabwidth){
+                          margin: 0 0 20px 20px;
                         }
+                        li {
+                          margin: 0 0 10px 10px;
+                          font-size: inherit;
+                          padding: 0;
+                          list-style-type: none;
+                          text-indent: -15px;
+                          @media screen and (min-width: $tabwidth){
+                            margin: 0 0 10px 20px;
+                          }
+                          &:before {
+                              content: "-";
+                              display: inline;
+                              margin: 0 10px 0 0;
+                          }
+                          ul {
+                            margin: 0;
+                          }
+                        }
+                      }
+                }
+                >.col-2 {
+                    min-height: 1px;
+                    margin: 20px 0 0 0;
+                    padding: 0;
+                    width: 100%;
+                    float: none;
+                    @media screen and (min-width: $midwidth){
+                        float: left;
+                        width: 60%;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .headshot {
+                        img {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                    header {
+                        margin: 20px 0 10px 0;
+                        text-align: center;
+                        @media screen and (min-width: $tabwidth){
+                            margin: 40px 0 10px 0;
+                        }
+                        h2 {   
+                            margin: 0;
+                            font-size: 30px;
+                            font-weight: 500;
+                            font-family: $font__rubik;
+                            @media screen and (min-width: $tabwidth){
+                                font-size: 40px;
+                            }
+                        }
+                    }
+                    .spacer {
+                        width: 150px;
+                        border-bottom: 1px solid $color__heidi-grey;
+                        margin: 0 auto;
+                    }
+                    .social {
+                        margin: 20px 0 0 0;
+                        text-align: center;
+                        .linkedin, .email {
+                            display: inline-block;
+                            margin: 0 20px;
+                            a {
+                                font-size: 30px;
+                                color: $color__heidi-grey;
+                                &:hover {
+                                    color: $color__heidi-blue;
+                                }
+                            }
+                        }
+                    }   
+                    .copy {
+                        margin: 20px 0 0 0;
+                        @media screen and (min-width: $tabwidth){
+                            margin: 50px 0 0 0;
+                        }
+
                     }
                 }
             }
