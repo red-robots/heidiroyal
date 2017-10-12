@@ -1396,19 +1396,19 @@ html[xmlns] .flexslider .slides{display:block}
 }#masthead>.wrapper .logo a img{display:block;width:100%}
 #masthead>.wrapper #site-navigation{text-align:center;margin:10px 0 0 0}
 #masthead>.wrapper #site-navigation.toggled button{background-color:#6285a5;color:white;border:1px solid #6285a5}
-#masthead>.wrapper #site-navigation.toggled #primary-menu{display:block}
+#masthead>.wrapper #site-navigation.toggled .menu-primary-container{display:block}
 #masthead>.wrapper #site-navigation button{display:inline-block;border:1px solid #a0a0a0;box-shadow:none;background-color:white;color:#6285a5;text-transform:uppercase;font-family:"Oxygen",sans-serif;font-size:16px;padding:10px;text-shadow:none}
 @media screen and (min-width:600px){#masthead>.wrapper #site-navigation button{display:none}
-}#masthead>.wrapper #site-navigation #primary-menu{display:none}
-@media screen and (min-width:600px){#masthead>.wrapper #site-navigation #primary-menu{display:block}
-}#masthead>.wrapper #site-navigation #primary-menu ul{margin:0;padding:0}
-#masthead>.wrapper #site-navigation #primary-menu ul li{margin:10px 0;list-style-type:none}
-@media screen and (min-width:600px){#masthead>.wrapper #site-navigation #primary-menu ul li{margin:0 30px;display:inline-block}
-}#masthead>.wrapper #site-navigation #primary-menu ul li:last-child{margin-bottom:0}
-#masthead>.wrapper #site-navigation #primary-menu ul li a{text-decoration:none;font-size:16px;color:#404040;text-transform:uppercase}
-@media screen and (min-width:600px){#masthead>.wrapper #site-navigation #primary-menu ul li a{font-size:22px}
-}#masthead>.wrapper #site-navigation #primary-menu ul li a:hover{color:#404040}
-#masthead>.wrapper #site-navigation #primary-menu ul li .sub-menu{display:none}
+}#masthead>.wrapper #site-navigation .menu-primary-container{display:none}
+@media screen and (min-width:600px){#masthead>.wrapper #site-navigation .menu-primary-container{display:block}
+}#masthead>.wrapper #site-navigation .menu-primary-container ul{margin:0;padding:0}
+#masthead>.wrapper #site-navigation .menu-primary-container ul li{margin:10px 0;list-style-type:none}
+@media screen and (min-width:600px){#masthead>.wrapper #site-navigation .menu-primary-container ul li{margin:0 30px;display:inline-block}
+}#masthead>.wrapper #site-navigation .menu-primary-container ul li:last-child{margin-bottom:0}
+#masthead>.wrapper #site-navigation .menu-primary-container ul li a{text-decoration:none;font-size:16px;color:#404040;text-transform:uppercase}
+@media screen and (min-width:600px){#masthead>.wrapper #site-navigation .menu-primary-container ul li a{font-size:22px}
+}#masthead>.wrapper #site-navigation .menu-primary-container ul li a:hover{color:#404040}
+#masthead>.wrapper #site-navigation .menu-primary-container ul li .sub-menu{display:none}
 .circles{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-justify-content:stretch;-webkit-box-pack:stretch;-ms-flex-pack:stretch;justify-content:stretch}
 .circles .circle{border-radius:50%;margin:10px 0;border:2px solid #a0a0a0;width:100%;padding:3px}
 .circles .circle:first-child{margin-top:0}

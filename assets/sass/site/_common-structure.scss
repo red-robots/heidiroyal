@@ -126,7 +126,7 @@
           color: white;
           border: 1px solid $color__heidi-blue;
         }
-        #primary-menu {
+        .menu-primary-container {
           display: block;
         }
       }
@@ -145,7 +145,7 @@
           display: none;
         }
       }
-      #primary-menu {
+      .menu-primary-container {
         display: none;
         @media screen and (min-width: $tabwidth){
           display: block;

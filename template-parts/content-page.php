@@ -16,9 +16,9 @@
     endif;?>>
     </div><!--.row-1-->
     <div class="row-2">
-		<div class="wrapper cap clear-bottom">     
+		<div class="wrapper cap">     
             <header class="row-1"><h1><?php the_title();?></h1></header>
-            <div class="row-2">
+            <div class="row-2 clear-bottom">
                 <section class="col-1">
                     <div class="copy">
                         <?php the_content();?>
