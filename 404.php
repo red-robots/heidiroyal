@@ -22,40 +22,17 @@ get_header(); ?>
 				</div><!--.row-1-->
 				<div class="row-2">
 					<div class="wrapper cap">
-						<section class="col-1">
-							<header><h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'acstarter' ); ?></h1></header>
-							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'acstarter' ); ?></p>
-						</section><!--.col-1-->
-						<aside class="col-2">
-							<?php $practice_areas_title = get_field("practice_areas_title","option");
-							if($practice_areas_title):?>
-								<header><h2><?php echo $practice_areas_title;?></h2></header>
-							<?php endif;?>
-							<div class="wrapper">
-								<?php for($i=1;$i<4;$i++):
-									$image = get_field("circle_{$i}_image","option");
-									$title = get_field("circle_{$i}_title","option");
-									$link = get_field("circle_{$i}_link","option");?>
-									<div class="circle">
-										<?php if($link):?>
-											<a href="<?php echo $link;?>">
-										<?php endif;?>
-											<div class="wrapper" <?php if($image):
-												echo 'style="background-image: url('.$image['sizes']['medium'].');"';
-											endif;?>>
-												<?php if($title):?>
-													<div class="title">
-														<?php echo $title;?>
-													</div><!--.title-->
-												<?php endif;?>
-											</div><!--.wrapper-->
-										<?php if($link):?>
-											</a>
-										<?php endif;?>
-									</div><!--.circle-->
-								<?php endfor;?>
-							</div><!--.wrapper-->
-						</aside><!--.col-2-->
+						<header class="row-1"><h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'acstarter' ); ?></h1></header>
+						<div class="row-2">
+							<section class="col-1">
+								<div class="copy">
+									<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'acstarter' ); ?></p>
+								</div><!--.copy-->
+							</section><!--.col-1-->
+							<aside class="col-2">
+								<?php get_template_part("template-parts/content","circles");?>
+							</aside><!--.col-2-->
+						</div><!--.row-2-->
 					</div><!--.wrapper-->
 				</div><!--.row-2-->
 			</section><!-- .error-404 -->

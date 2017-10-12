@@ -16,18 +16,18 @@
     endif;?>>
     </div><!--.row-1-->
     <div class="row-2">
-		<div class="wrapper cap">
-            <section class="col-1">
-                <header><h1><?php the_title();?></h1></header>
-                <?php the_content();?>
-            </section><!--.col-1-->
-            <aside class="col-2">
-                <?php $practice_areas_title = get_field("practice_areas_title","option");
-                if($practice_areas_title):?>
-                    <header><h2><?php echo $practice_areas_title;?></h2></header>
-                <?php endif;?>
-                <?php get_template_part("template-parts/content","circles");?>
-            </aside><!--.col-2-->
+		<div class="wrapper cap clear-bottom">     
+            <header class="row-1"><h1><?php the_title();?></h1></header>
+            <div class="row-2">
+                <section class="col-1">
+                    <div class="copy">
+                        <?php the_content();?>
+                    </div><!--.copy-->
+                </section><!--.col-1-->
+                <aside class="col-2">
+                    <?php get_template_part("template-parts/content","circles");?>
+                </aside><!--.col-2-->
+            </div><!--.row-2-->
         </div><!--.wrapper-->
     </div><!--.row-2-->
 </article><!-- #post-## -->
