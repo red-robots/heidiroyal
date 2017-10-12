@@ -50,7 +50,7 @@
                             <?php endif;
                             if($email):?>
                                 <div class="email">
-                                    <a href="<?php echo $email;?>">
+                                    <a href="mailto:<?php echo $email;?>">
                                         <i class="fa fa-envelope"></i>
                                     </a>
                                 </div><!--linkedin-->

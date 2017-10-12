@@ -79,8 +79,10 @@
       @media screen and (min-width: $tabwidth){
         margin: 0 0 0 20px;
       }
-      ul.sub-menu {
-        margin: 0;
+      ul {
+        li {
+          list-style-type: circle;
+        }
       }
     }
   }

@@ -1387,7 +1387,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.copy ul,.copy ol{margin:0 0 20px 20px}
 }.copy ul li,.copy ol li{margin:0 0 0 10px;font-size:inherit;padding:0;list-style-type:square}
 @media screen and (min-width:600px){.copy ul li,.copy ol li{margin:0 0 0 20px}
-}.copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
+}.copy ul li ul li,.copy ol li ul li{list-style-type:circle}
 .copy ol li{list-style-type:decimal}
 #masthead>.wrapper{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-justify-content:stretch;-webkit-box-pack:stretch;-ms-flex-pack:stretch;justify-content:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;padding:20px}
 @media screen and (min-width:600px){#masthead>.wrapper{-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:1.5% 3%}
@@ -1446,7 +1446,7 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-page>.row-2>.wrapper,.error-404>.row-2>.wrapper,.template-sitemap>.row-2>.wrapper,.template-about>.row-2>.wrapper{padding:20px}
 @media screen and (min-width:600px){.template-page>.row-2>.wrapper,.error-404>.row-2>.wrapper,.template-sitemap>.row-2>.wrapper,.template-about>.row-2>.wrapper{padding:6% 5.5% 7% 5.5%}
 }.template-page>.row-2>.wrapper>header.row-1,.error-404>.row-2>.wrapper>header.row-1,.template-sitemap>.row-2>.wrapper>header.row-1,.template-about>.row-2>.wrapper>header.row-1{text-align:center;margin:0 0 20px 0}
-.template-page>.row-2>.wrapper>header.row-1 h1,.error-404>.row-2>.wrapper>header.row-1 h1,.template-sitemap>.row-2>.wrapper>header.row-1 h1,.template-about>.row-2>.wrapper>header.row-1 h1{font-size:30px;font-weight:500;font-family:"Oxygen",sans-serif;margin:0}
+.template-page>.row-2>.wrapper>header.row-1 h1,.error-404>.row-2>.wrapper>header.row-1 h1,.template-sitemap>.row-2>.wrapper>header.row-1 h1,.template-about>.row-2>.wrapper>header.row-1 h1{font-size:30px;font-weight:500;margin:0}
 @media screen and (min-width:600px){.template-page>.row-2>.wrapper>header.row-1 h1,.error-404>.row-2>.wrapper>header.row-1 h1,.template-sitemap>.row-2>.wrapper>header.row-1 h1,.template-about>.row-2>.wrapper>header.row-1 h1{font-size:40px}
 }.template-page>.row-2>.wrapper>.row-2>.col-1,.error-404>.row-2>.wrapper>.row-2>.col-1,.template-sitemap>.row-2>.wrapper>.row-2>.col-1,.template-about>.row-2>.wrapper>.row-2>.col-1{min-height:1px}
 @media screen and (min-width:600px){.template-page>.row-2>.wrapper>.row-2>.col-1,.error-404>.row-2>.wrapper>.row-2>.col-1,.template-sitemap>.row-2>.wrapper>.row-2>.col-1,.template-about>.row-2>.wrapper>.row-2>.col-1{float:left;width:75%;padding:0 14% 0 0}
@@ -1467,7 +1467,7 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-about>.row-2>.wrapper>.row-2>.col-2 .headshot img{width:100%;display:block}
 .template-about>.row-2>.wrapper>.row-2>.col-2 header{margin:20px 0 10px 0;text-align:center}
 @media screen and (min-width:600px){.template-about>.row-2>.wrapper>.row-2>.col-2 header{margin:40px 0 10px 0}
-}.template-about>.row-2>.wrapper>.row-2>.col-2 header h2{margin:0;font-size:30px;font-weight:500;font-family:"Oxygen",sans-serif}
+}.template-about>.row-2>.wrapper>.row-2>.col-2 header h2{margin:0;font-size:30px;font-weight:500}
 @media screen and (min-width:600px){.template-about>.row-2>.wrapper>.row-2>.col-2 header h2{font-size:40px}
 }.template-about>.row-2>.wrapper>.row-2>.col-2 .spacer{width:150px;border-bottom:1px solid #a0a0a0;margin:0 auto}
 .template-about>.row-2>.wrapper>.row-2>.col-2 .social{margin:20px 0 0 0;text-align:center}
