@@ -80,5 +80,75 @@ jQuery(document).ready(function ($) {
 	*
 	------------------------------------*/
 	new WOW().init();
+	var $template = $('.error-404, .template-page, .template-sitemap');
+	if($template.length>0){
+		var $window = $(window);	
+		$window.on('resize scroll',function(){
+			var $header = $template.find('>.row-2 >.wrapper >.row-1');
+			var $footer = $('#colophon');
+			if($header.length>0){
+				var anchor_top = $header.offset().top;
+				var anchor_bottom = $footer.offset().top;
+				var $body = $('body');
+				var $aside = $template.find('>.row-2 >.wrapper >.row-2 >.col-2');
+				var $col_1 = $template.find('>.row-2 >.wrapper >.row-2 >.col-1');
+				if($col_1.outerHeight()>$aside.outerHeight()){
+					var width = $body.innerWidth()>=1500 ? .25*(1500-(.11*$body.innerWidth())) + "px" : '22.25%';
+					var right = $body.innerWidth()>=1500 ? .055*$body.innerWidth() + 1/2*($body.innerWidth()-1500) + "px": '5.5%';
+					var padding = $body.innerWidth()>=1500 ? "0 "+.045*(1500-(.11*$body.innerWidth())) + "px": '0 4.005%';
+					if($window.scrollTop() > anchor_top && $body.innerWidth() > 900 
+						&& ($aside.outerHeight() + $header.outerHeight() + $window.scrollTop()) < anchor_bottom ){
+						$aside.css({
+							width: width,
+							position: 'fixed',
+							top: $header.outerHeight(),
+							right: right,
+							bottom: 'initial',
+							padding: padding
+						});
+					} else if($window.scrollTop() > anchor_top && $body.innerWidth() > 600 
+						&& ($aside.outerHeight() + $header.outerHeight() + $window.scrollTop()) < anchor_bottom){
+						$aside.css({
+							width: width,
+							position: 'fixed',
+							bottom: 'initial',
+							top: $header.outerHeight(),
+							right: right,
+							padding: ''
+						});
+					} else if($window.scrollTop() > anchor_top && $body.innerWidth() > 900 
+						&& ($aside.outerHeight() + $header.outerHeight() + $window.scrollTop()) >= anchor_bottom){
+						$aside.css({
+							width: width,
+							position: 'fixed',
+							top: 'initial',
+							bottom: window.innerHeight + $window.scrollTop() - anchor_bottom,
+							right: right,
+							padding: padding
+						});
+					} else if($window.scrollTop() > anchor_top && $body.innerWidth() > 600 
+						&& ($aside.outerHeight() + $header.outerHeight() + $window.scrollTop()) >= anchor_bottom){
+						$aside.css({
+							width: width,
+							position: 'fixed',
+							top: 'initial',
+							bottom: window.innerHeight + $window.scrollTop() - anchor_bottom,
+							right: right,
+							padding: ''
+						});
+					} else {
+						$aside.css({
+							width: '',
+							position: '',
+							top: '',
+							bottom: '',
+							right: '',
+							padding: ''
+						});
+					}
+				}
+			}
+		});
+	}
 
 });// END #####################################    END
