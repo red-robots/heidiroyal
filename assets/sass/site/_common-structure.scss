@@ -6,7 +6,7 @@
   }
 }
 .cap {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .copy {
@@ -14,8 +14,9 @@
   color: $color__text-main;
   font-weight: 500;
   font-family: $font__rubik;
+  text-align: justify;
   @media screen and (min-width: $tabwidth){
-    font-size: 22px;
+    font-size: 18px;
   }
   > *:first-child {
     margin-top: 0;
@@ -88,6 +89,16 @@
   }
   ol li {
     list-style-type: decimal;
+  }
+  input[type=submit]{
+    border: 1px solid $color__heidi-blue;
+    box-shadow: none;
+    text-shadow: none;
+    background-color: white;
+    &:hover {
+      background-color: $color__heidi-blue;
+      color: white;
+    }
   }
 }
 #masthead {

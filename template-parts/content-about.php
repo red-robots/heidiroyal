@@ -20,21 +20,9 @@
             <header class="row-1"><h1><?php the_title();?></h1></header>
             <div class="row-2 clear-bottom">
                 <aside class="col-1 copy">
-                    <?php $sidebar = get_field("sidebar");
-                    if($sidebar):
-                        echo $sidebar;
-                    endif;?>
-                </aside><!--.col-1-->
-                <section class="col-2">
-                    <?php $image = get_field("image");
-                    $name = get_field("name");
+                    <?php $name = get_field("name");
                     $linkedin = get_field("linkedin");
                     $email = get_field("email");
-                    if($image):?>
-                        <div class="headshot">
-                            <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
-                        </div><!--.headshot-->
-                    <?php endif;
                     if($name):?>
                         <header><h2><?php echo $name;?></h2></header>
                         <div class="spacer"></div><!--.spacer-->
@@ -57,6 +45,14 @@
                             <?php endif;?>
                         </div><!--.social-->
                     <?php endif;?>
+                    <?php $sidebar = get_field("sidebar");
+                    if($sidebar):?>
+                        <div class="list">
+                            <?php echo $sidebar;?>
+                        </div><!--.list-->
+                    <?php endif;?>
+                </aside><!--.col-1-->
+                <section class="col-2">
                     <div class="copy">
                         <?php the_content();?>
                     </div><!--.copy-->
