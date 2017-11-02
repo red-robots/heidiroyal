@@ -44,7 +44,7 @@
 }
 .template-page, .error-404, .template-sitemap, .template-about, .template-contact {
     >.row-1 {
-        padding: 14% 0;
+        padding: 10% 0;
         min-height: 200px;
         width: 100%;
         background-position: center;
@@ -57,7 +57,7 @@
         >.wrapper {
             padding: 20px;
             @media screen and (min-width: $tabwidth){
-                padding: 6% 5.5% 7% 5.5%;
+                padding: 3% 5.5% 7% 5.5%;
             }
             >header.row-1 {
                 text-align: center;
