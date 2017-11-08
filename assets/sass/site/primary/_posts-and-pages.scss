@@ -12,12 +12,13 @@
     >.row-2 {
         background-color: $color__heidi-light-grey;
         >.wrapper {
-            padding: 20px;
-            text-align: justify;
-            @media screen and (min-width: $tabwidth){
-                padding: 3% 12%;
+            >.wrapper {
+                padding: 20px;
+                text-align: justify;
+                @media screen and (min-width: $tabwidth){
+                    padding: 3% 12%;
+                }
             }
-
         }
     }
     >.row-3 {

@@ -17,7 +17,9 @@
     </div><!--.row-1-->
     <section class="row-2">
 		<div class="wrapper cap copy">
-            <?php the_content();?>
+            <div class="wrapper">
+                <?php the_content();?>
+            </div><!--.wrapper-->
         </div><!--.wrapper-->
     </section><!--.row-2-->
     <section class="row-3">
