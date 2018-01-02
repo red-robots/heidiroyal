@@ -15,10 +15,15 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				<?php $post = get_post(70);
 				setup_postdata($post);?>
-				<?php $row_1_image = get_field("row_1_image");?>
-				<div class="row-1" <?php if($row_1_image):
-					echo 'style="background-image: url('.$row_1_image['url'].');"';
-				endif;?>>
+				<?php $row_1_image = get_field("row_1_image");
+				$row_1_image_mobile = get_field("row_1_image_mobile");?>
+				<div class="row-1 <?php if($row_1_image_mobile) echo "mobile ";?>">
+					<?php if($row_1_image):?>
+						<img class="desktop" src="<?php echo $row_1_image['url'];?>" alt="<?php echo $row_1_image['alt'];?>">
+					<?php endif;?>
+					<?php if($row_1_image_mobile):?>
+						<img class="mobile" src="<?php echo $row_1_image_mobile['url'];?>" alt="<?php echo $row_1_image_mobile['alt'];?>">
+					<?php endif;?>
 				</div><!--.row-1-->
 				<div class="row-2">
 					<div class="wrapper cap">

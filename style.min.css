@@ -1437,18 +1437,24 @@ html[xmlns] .flexslider .slides{display:block}
 #colophon>.wrapper>.wrapper>.col-2 ul li a{color:white;text-decoration:none}
 #colophon>.wrapper>.wrapper>.col-2 ul li a:hover{color:#a0a0a0}
 #colophon>.wrapper>.wrapper>.col-2 ul li .sub-menu{display:none}
-.template-index>.row-1{padding:14% 0;min-height:200px;width:100%;background-position:center;background-size:cover}
-@media screen and (min-width:1500px){.template-index>.row-1{padding:225px 0}
-}.template-index>.row-2{background-color:#f5f5f5}
+.template-index>.row-1.mobile img.desktop{display:none}
+@media screen and (min-width:600px){.template-index>.row-1.mobile img.desktop{display:block}
+}.template-index>.row-1.mobile img.mobile{display:block}
+@media screen and (min-width:600px){.template-index>.row-1.mobile img.mobile{display:none}
+}.template-index>.row-1 img{width:100%;display:block}
+.template-index>.row-2{background-color:#f5f5f5}
 .template-index>.row-2>.wrapper>.wrapper{padding:20px;text-align:justify}
 @media screen and (min-width:600px){.template-index>.row-2>.wrapper>.wrapper{padding:3% 12%}
 }.template-index>.row-3>.wrapper.cap>.wrapper.circles{padding:20px}
 @media screen and (min-width:600px){.template-index>.row-3>.wrapper.cap>.wrapper.circles{padding:8% 12%;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 }@media screen and (min-width:600px){.template-index>.row-3>.wrapper.cap>.wrapper.circles .circle{width:30.66667%}
 }@media screen and (min-width:900px){.template-index>.row-3>.wrapper.cap>.wrapper.circles .circle{width:23.33333%}
-}.template-page>.row-1,.error-404>.row-1,.template-sitemap>.row-1,.template-about>.row-1,.template-contact>.row-1{padding:10% 0;min-height:200px;width:100%;background-position:center;background-size:cover}
-@media screen and (min-width:1500px){.template-page>.row-1,.error-404>.row-1,.template-sitemap>.row-1,.template-about>.row-1,.template-contact>.row-1{padding:225px 0}
-}.template-page>.row-2>.wrapper,.error-404>.row-2>.wrapper,.template-sitemap>.row-2>.wrapper,.template-about>.row-2>.wrapper,.template-contact>.row-2>.wrapper{padding:20px}
+}.template-page>.row-1.mobile img.desktop,.error-404>.row-1.mobile img.desktop,.template-sitemap>.row-1.mobile img.desktop,.template-about>.row-1.mobile img.desktop,.template-contact>.row-1.mobile img.desktop{display:none}
+@media screen and (min-width:600px){.template-page>.row-1.mobile img.desktop,.error-404>.row-1.mobile img.desktop,.template-sitemap>.row-1.mobile img.desktop,.template-about>.row-1.mobile img.desktop,.template-contact>.row-1.mobile img.desktop{display:block}
+}.template-page>.row-1.mobile img.mobile,.error-404>.row-1.mobile img.mobile,.template-sitemap>.row-1.mobile img.mobile,.template-about>.row-1.mobile img.mobile,.template-contact>.row-1.mobile img.mobile{display:block}
+@media screen and (min-width:600px){.template-page>.row-1.mobile img.mobile,.error-404>.row-1.mobile img.mobile,.template-sitemap>.row-1.mobile img.mobile,.template-about>.row-1.mobile img.mobile,.template-contact>.row-1.mobile img.mobile{display:none}
+}.template-page>.row-1 img,.error-404>.row-1 img,.template-sitemap>.row-1 img,.template-about>.row-1 img,.template-contact>.row-1 img{width:100%;display:block}
+.template-page>.row-2>.wrapper,.error-404>.row-2>.wrapper,.template-sitemap>.row-2>.wrapper,.template-about>.row-2>.wrapper,.template-contact>.row-2>.wrapper{padding:20px}
 @media screen and (min-width:600px){.template-page>.row-2>.wrapper,.error-404>.row-2>.wrapper,.template-sitemap>.row-2>.wrapper,.template-about>.row-2>.wrapper,.template-contact>.row-2>.wrapper{padding:3% 5.5% 7% 5.5%}
 }.template-page>.row-2>.wrapper>header.row-1,.error-404>.row-2>.wrapper>header.row-1,.template-sitemap>.row-2>.wrapper>header.row-1,.template-about>.row-2>.wrapper>header.row-1,.template-contact>.row-2>.wrapper>header.row-1{text-align:center;margin:0 0 20px 0}
 .template-page>.row-2>.wrapper>header.row-1 h1,.error-404>.row-2>.wrapper>header.row-1 h1,.template-sitemap>.row-2>.wrapper>header.row-1 h1,.template-about>.row-2>.wrapper>header.row-1 h1,.template-contact>.row-2>.wrapper>header.row-1 h1{font-size:30px;font-weight:500;margin:0;text-transform:uppercase;font-family:"Rufina",serif}
