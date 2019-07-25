@@ -1476,7 +1476,7 @@ html[xmlns] .flexslider .slides{display:block}
 .template-about>.row-2>.wrapper>.row-2>.col-1 .social .linkedin a,.template-about>.row-2>.wrapper>.row-2>.col-1 .social .email a{font-size:30px;color:#a0a0a0}
 .template-about>.row-2>.wrapper>.row-2>.col-1 .social .linkedin a:hover,.template-about>.row-2>.wrapper>.row-2>.col-1 .social .email a:hover{color:#3a6d8a}
 .template-about>.row-2>.wrapper>.row-2>.col-1 .list{text-align:left}
-.template-about>.row-2>.wrapper>.row-2>.col-1 .list h2{background-color:#3a6d8a;color:white;font-size:20px;padding:0 5px}
+.template-about>.row-2>.wrapper>.row-2>.col-1 .list h2{background-color:#3a6d8a;color:white;font-size:20px;padding:3px 15px 1px}
 .template-about>.row-2>.wrapper>.row-2>.col-1 .list ul{line-height:1.2;padding:0;margin:0 20px 20px 20px;font-size:inherit}
 @media screen and (min-width:600px){.template-about>.row-2>.wrapper>.row-2>.col-1 .list ul{margin:0 30px 20px 20px}
 }.template-about>.row-2>.wrapper>.row-2>.col-1 .list ul li{margin:0 0 10px 10px;font-size:inherit;padding:0;list-style-type:square}
@@ -1489,7 +1489,15 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:900px){.template-contact>.row-2>.wrapper>.row-2>.col-1{float:left;width:50%;padding:0 3% 0 0}
 }.template-contact>.row-2>.wrapper>.row-2>.col-2{min-height:1px;margin:20px 0 0 0;padding:0;width:100%;float:none}
 @media screen and (min-width:900px){.template-contact>.row-2>.wrapper>.row-2>.col-2{float:left;width:50%;margin:0;padding:0 0 0 3%}
-}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+}.template-about .pagetitlediv.wrapper{padding-bottom:0}
+.template-about .block-info.wrapper{padding-top:0;padding-bottom:4%}
+.template-about .block-info.wrapper .profilepic{margin-bottom:20px}
+.template-about .block-info.wrapper .profilepic img{width:100%;height:auto}
+.template-about .block-info.wrapper .row-2{padding-top:7%;border-top:6px solid #3a6d8a}
+.template-about .block-info.wrapper .nosocial{padding-bottom:15px}
+.template-about .block-info.wrapper.block1.wrapper{padding-top:0}
+.template-about .block-info.wrapper.block1 .row-2{padding-top:0;border-top:none !important}
+.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}
