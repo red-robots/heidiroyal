@@ -40,7 +40,7 @@
             $items = new WP_Query($args);
             if ( $items->have_posts() ) { ?>
                 <?php $i=1; while ( $items->have_posts() ) : $items->the_post(); ?>
-                <div class="wrapper cap block-info block<?php echo $i?>">
+                <div id="post<?php the_ID(); ?>" class="wrapper cap block-info block<?php echo $i?>">
                     <div class="row-2 clear-bottom">
                         <aside class="col-1 copy">
                             <?php $name = get_the_title();

@@ -293,6 +293,10 @@
     .nosocial {
         padding-bottom: 15px;
     }
+    &:focus {
+        outline: none;
+        border: none;
+    }
 }
 .template-about .block-info.wrapper.block1 {
     &.wrapper {

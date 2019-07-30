@@ -346,3 +346,120 @@
     }
   }
 }
+
+#masthead > .wrapper #site-navigation.main-navigation {
+  .menu-primary-container {
+    border-top: 3px solid $color__heidi-blue;
+    border-bottom: 3px solid $color__heidi-blue;
+    margin-top: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include tab {
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      border-top: none;
+      border-bottom: none;
+    }
+  }
+  .menu a {
+    @include transition(all ease-out .3s);
+  }
+  .menu li {
+    position: relative;
+    @media screen and (max-width: 599px) {
+      padding: 0 0;
+      margin: 0 0;
+    }
+  }
+  .menu > li > a {
+    position: relative;
+    z-index: 5;
+    @media screen and (max-width: 599px) {
+      padding: 10px 10px;
+      display: block;
+      font-size: 22px;
+      &:before {
+        display: none;
+      }
+      &:hover {
+        color: $color__heidi-blue;
+      }
+    }
+  }
+  .menu > li.current_page_item > a,
+  .menu > li.current_page_item:hover > a {
+    @media screen and (max-width: 599px) {
+      color: $color__heidi-blue;
+      opacity:0.65;
+    }
+  }
+  .menu li ul a {
+    @media screen and (max-width: 599px) {
+      font-size: 18px;
+    }
+  }
+
+  .menu li ul {
+    display: block!important;
+    text-align: center;
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none;
+    @include tab {
+      text-align: left;
+      width: 220px;
+      border-radius: 5px;
+      background: $color__heidi-blue;
+      position: absolute;
+      left: -15px;
+      height: 0;
+      visibility: hidden;
+      opacity: 0;
+      overflow: hidden;
+      margin-top: -10px;
+      @include transition(all ease-in-out .4s);
+    }
+  }
+  .menu li ul li {
+    display: block;
+    width: 100%;
+    padding: 0 0;
+    margin: 0 0;
+    a {
+      display: block;
+      padding: 5px 15px;
+      margin: 0 0;
+      text-transform: none;
+      border-top: 1px dotted rgba(255,255,255,.6);
+      @include tab {
+        color: #FFF;
+      }
+      &:before {
+        display: none;
+      }
+      &:hover {
+        color: $color__heidi-blue;
+        @include tab {
+          color: rgba(255,255,255,.5);
+        }
+      }
+    }
+  }
+  .menu li ul li:first-child > a {
+    border-top: none;
+  }
+  .menu > li:hover ul {
+    @include tab {
+      height: auto;
+      visibility: visible;
+      opacity: 1;
+      overflow: visible;
+      margin-top: 0;
+    }
+  }
+}
